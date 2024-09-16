@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Text, StyleSheet } from "react-native";
 
 export default function Texto() {
   const [texto, setTexto] = useState("Texto do novo componente");
+
+  useEffect(() => {
+    setTexto("Outro texto");
+  }, []);
 
   return <Text style={styles.texto}>{texto}</Text>;
 }

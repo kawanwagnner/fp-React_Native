@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   totalPrice: {
     textAlign: "center",
     marginLeft: -35,
-    marginTop: 350,
+    marginTop: 50,
   },
   price: {
     color: "green",
